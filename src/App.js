@@ -81,7 +81,7 @@ function App() {
 
   return (
     <div className="container">
-      <div className="row">
+      <div className="row mb-3">
         <div className="col-md-8">
           <h1>React App</h1>
         </div>
@@ -138,7 +138,7 @@ function App() {
 
       <ul className="list-group">
         {list.length ? (
-          list.reverse().map((item) => (
+          list.map((item) => (
             <li className="list-group-item" key={item.name}>
               <a href={item.link} target="_blank" rel="noreferrer">
                 {item.name}
